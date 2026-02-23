@@ -2,10 +2,13 @@ from pyscript import document, display
 
 def signUp(e):
 
+    #deletor of output
     document.getElementById('output').innerHTML = "   "
     
     username = document.getElementById('inputuser').value
     password = document.getElementById('inputpass').value
+
+    # ordinal conditions wih corresponding output
 
     if len(password) == 0 or len(username) == 0:
             display(f'please complete all fields.', target='output')
@@ -31,6 +34,7 @@ def signUp(e):
         else:
 
             pass
+
 
 
 
