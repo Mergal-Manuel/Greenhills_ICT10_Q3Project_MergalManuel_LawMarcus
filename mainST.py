@@ -26,5 +26,9 @@ def signUp(e):
         elif password.isalpha() == True:
             display(f'your password must contain at least 1 number.', target='output')
 
+         elif len(password) == 0 or len(usernamne) == 0:
+            display(f'please complete all fields.', target='output')
+
         else:
+
             pass
