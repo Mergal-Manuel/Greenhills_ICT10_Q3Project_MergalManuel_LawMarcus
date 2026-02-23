@@ -88,4 +88,5 @@ def checkItOut(e):
         display('Please get medically approved.', target='output1')
         
     else:
-        pass
+        display('Please complete all fields.', target='output1')
+
