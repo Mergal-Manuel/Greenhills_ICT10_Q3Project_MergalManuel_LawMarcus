@@ -1,6 +1,7 @@
 from pyscript import document, display
 
 def checkItOut(e):
+    #deletor of outputs
     document.getElementById('output1').innerHTML = "   "
     document.getElementById('outputPic').innerHTML = "   "
 
@@ -10,6 +11,7 @@ def checkItOut(e):
     grade = document.getElementById("grade").value
     section = document.getElementById("section").value
 
+    #intram team choosing matrix
     if reg == 'yes' and medcert == 'yes' and grade == '7' and section == 'Sapphire':
         display('Congratulations! You may play as Red Bulldogs.', target='output1')
         document.getElementById('outputPic').innerHTML = "<img src='red bulldogs (1).jpg' height='350px' width='350px'>"
@@ -80,7 +82,7 @@ def checkItOut(e):
 
 
 
-
+#conditions with corresponding output
     elif reg == 'no' and medcert == 'yes':
         display('Please register online first.', target='output1')
 
@@ -89,4 +91,5 @@ def checkItOut(e):
         
     else:
         display('Please complete all fields.', target='output1')
+
 
