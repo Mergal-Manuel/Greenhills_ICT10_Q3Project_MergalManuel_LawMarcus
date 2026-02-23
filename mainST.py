@@ -16,7 +16,7 @@ def signUp(e):
 
     else:
     
-        elif len(username) < 7:
+        if len(username) < 7:
             display(f'your username must have more than or equal to 7 characters.', target='output')
 
         elif len(password) < 10:
@@ -31,6 +31,7 @@ def signUp(e):
         else:
 
             pass
+
 
 
 
