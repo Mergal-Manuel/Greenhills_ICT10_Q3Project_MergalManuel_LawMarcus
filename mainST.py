@@ -7,15 +7,14 @@ def signUp(e):
     username = document.getElementById('inputuser').value
     password = document.getElementById('inputpass').value
 
-
-    if len(username) >= 7 and len(password) >=10 and password.isdigit() == False and password.isalpha() == False:
+    if len(password) == 0 or len(usernamne) == 0:
+            display(f'please complete all fields.', target='output')
+        
+    elif len(username) >= 7 and len(password) >=10 and password.isdigit() == False and password.isalpha() == False:
         
         display(f'successfully signed up.', target='output')
 
     else:
-        
-        if len(password) == 0 or len(usernamne) == 0:
-            display(f'please complete all fields.', target='output')
     
         elif len(username) < 7:
             display(f'your username must have more than or equal to 7 characters.', target='output')
@@ -32,5 +31,6 @@ def signUp(e):
         else:
 
             pass
+
 
 
