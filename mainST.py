@@ -13,6 +13,9 @@ def signUp(e):
         display(f'successfully signed up.', target='output')
 
     else:
+        
+        elif len(password) == 0 or len(usernamne) == 0:
+            display(f'please complete all fields.', target='output')
     
         if len(username) < 7:
             display(f'your username must have more than or equal to 7 characters.', target='output')
@@ -26,9 +29,7 @@ def signUp(e):
         elif password.isalpha() == True:
             display(f'your password must contain at least 1 number.', target='output')
 
-         elif len(password) == 0 or len(usernamne) == 0:
-            display(f'please complete all fields.', target='output')
-
         else:
 
             pass
+
